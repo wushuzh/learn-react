@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "start": "live-server --port=3000 ./dist",
-    "build": "babel ./src/index.js --out-file ./dist/bundle.js"
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "live-server": "^1.2.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
   }
 }

@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "start": "live-server --port=3000 ./dist",
+    "build": "babel ./src/index.js --out-file ./dist/bundle.js"
+  },
   "devDependencies": {
-    "httpster": "^1.0.3"
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "live-server": "^1.2.0"
   }
 }

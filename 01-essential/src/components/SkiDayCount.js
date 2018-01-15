@@ -1,6 +1,15 @@
-import React from 'react'
+import { Component } from 'react'
 
-export class SkiDayCount extends React.Component {
+export class SkiDayCount extends Component {
+
+  precentToDecimal(decimal) {
+    return ((decimal * 100) + '%')
+  }
+
+  calcGoalProgress(total, goal) {
+    return this.precentToDecimal(total/goal)
+  }
+
   render() {
     return (
       <div className="ski-day-count">
@@ -17,7 +26,9 @@ export class SkiDayCount extends React.Component {
           <span>days</span>
         </div>
         <div>
-          <span>{this.props.goal}</span>
+          <span>{this.calcGoalProgress(
+            this.props.total,
+            this.props.goal)}</span>
         </div>
       </div>
     )

@@ -30,6 +30,23 @@ module.exports = {
         use: {
           loader: "json-loader",
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'autoprefixer-loader' }
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'autoprefixer-loader' },
+          { loader: 'sass-loader' }
+        ]
       }
     ]
   }

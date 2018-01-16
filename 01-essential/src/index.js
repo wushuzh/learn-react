@@ -7,7 +7,7 @@ window.React = React
 
 render(
   <div>
-    <SkiDayCount />
+    <SkiDayCount backcountry="false"/>
     <SkiDayList days={
       [
         {

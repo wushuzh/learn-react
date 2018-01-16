@@ -8,6 +8,8 @@ window.React = React
 render(
   <div>
     <SkiDayCount backcountry="false"/>
+    <SkiDayList days="str days instead of array" />
+    <SkiDayList days={[]} />
     <SkiDayList days={
       [
         {
